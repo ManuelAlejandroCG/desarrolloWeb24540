@@ -1,48 +1,167 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Silver Stone</title>
-    <link rel="stylesheet" href="../css/estilo.css">    
+    <link rel="stylesheet" href="../css/bootstrap.css"> <!-- css boostrap-->
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
-<nav>
-    <div class="topNav"> <!--menu de navegacion superior-->
-        <a href="../nosotros.html">Nosotros</a>
-        <a href="../contacto.html">Contacto</a>
-        <a href="../presupuestos.html">Presupuestos</a>       
-        <div class="subNav">
-            <a class="active" href="../productos.html">Productos</button>
-            <div class="subNavContenido">
-                <a href="granito.html">Granito</a>
-                <a href="marmol.html">Marmol</a>
-                <a href="silestone.html">Silestone</a>
-                <a href="dekton.html">Dekton</a>
-            </div>
-        </div>        
-        <a href="../index.html">Inicio</a>
-    </div>
-</nav>
+
 <body>
-    <a href="../index.html"><img class="logo" src="../imagenes/logo.PNG" alt="Ocurrio un problema con el logo"></a>
-    <br>
-    <br>
-    <h1 class="tituloProductos titulo">Marmol</h1>     
-    <br>
-    <p>Caracteristicas principales del producto</p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="galeriaVariantes">
-        <p>ESPACIO PARA GALERIA DE VARIANTES</p>
-    </div>
-<footer>
-    <h5><a href="../index.html">Home</a> | Legales | Mapa del sitio</h5>
-    <br>
-    <br>
-    <br>
-</footer>
+    <header>
+        <nav class="navbar navbar-expand-lg bgnav navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../presupuestos.html">Presupuestos</a>
+                        </li>
+                        <li class="subMenu nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="productos.html">Productos</a>
+                            <ul class="dropdown-menu subMenuBorde bgnav" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="granito.html">Granito</a></li>
+                                <li><a class="dropdown-item" href="marmol.html">Marmol</a></li>
+                                <li><a class="dropdown-item" href="silestone.html">Silestone</a></li>
+                                <li><a class="dropdown-item" href="dekton.html">Dekton</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--espacio de logo-->
+        <section>
+            <a href="../index.html"><img class="logo" src="../imagenes/logo.png"
+                    alt="Ocurrio un problema con el logo"></a>
+        </section>
+        <!--fin espacio de logo-->
+        <h1 class="tituloProductos titulo">Marmol</h1>
+        <h2 class="textoCentrado">Caracteristicas</h2>
+        <hr>
+        <!--informacion general marmol-->
+        <section class="descripcion">
+            <h2>¿Qué es el mármol?</h2>
+            <h3>Composición y Formación</h3>
+            <p class="descripcionProductos">
+                El mármol es una roca metamórfica compacta formada a partir de rocas calizas que, sometidas a elevadas
+                temperaturas (entre 150 y 200 °C) y presiones (alrededor de 1.500 bar), por largos períodos de tiempo
+                alcanzando un alto grado de cristalización. El componente básico del mármol es el carbonato cálcico,
+                cuyo contenido supera el 90%; los demás componentes, considerados impurezas, son los que dan gran
+                variedad de colores en los mármoles y definen sus características físicas. Tras un proceso de pulido por
+                abrasión el mármol alcanza alto nivel de brillo natural, es decir, sin ceras ni componentes químicos. El
+                mármol se utiliza principalmente en la construcción, decoración y escultura. A veces es translúcido, de
+                diferentes colores, como blanco, marrón, rojo, verde, negro, gris, azul amarillo, y que puede aparecer
+                de coloración uniforme, jaspeada (a salpicaduras), veteada (tramada de líneas) y diversas
+                configuraciones o mezclas entre ellas. <br>
+                Con frecuencia otros minerales aparecen juntos a la calcita formando el mármol, como el grafito,
+                clorita, talco, mica, cuarzo, pirita y algunas piedras preciosas como el corindón, granate, zirconita, y
+                muchos más.
+            </p>
+            <h3>Propiedades</h3>
+            <p class="descripcionProductos">
+                Densidad entre 2.380 y 2.870 kg/m³ <br>
+                Dureza Mohs = 3-4 <br>
+                Absorción de agua en peso entre 0.2 y 0.7 % <br>
+                Resistencia a la compresión entre 600 y 1000 kg/cm² <br>
+                Resistencia a la tracción entre 100 y 360 kg/cm² <br>
+                Hay otras propiedades más específicas y muy variables como la resistencia química y al desgaste así como
+                el coeficiente de expansión térmica que deben ser consultadas con las normas del país o las
+                especificaciones técnicas de los productores del mármol. <br>
+                Siempre deberá tenerse en cuenta que el mercado de los mármoles, siempre resaltará mucho más las
+                cualidades estéticas del producto, su fuerte, mientras que los datos técnicos, adquieren un lugar
+                secundario y estos últimos son los decisivos a la hora de un proyecto.
+            </p>
+            <h3>Espesores</h3>
+            <p class="descripcionProductos">
+                TABLAS: Actualmente se está usando en general de 2 cm de espesor. <br>
+                BALDOSAS: entre 1.5 y 1 cm de espesor dependiendo del tamaño de la placa.
+            </p>
+            <h3>Formatos</h3>
+            <p class="descripcionProductos">
+                Al ser un material natural extraído de la montaña no tiene una medida en especial. <br>
+                Altura: 120 a 180 cm <br>
+                Largo: 200 a 300 cm
+            </p>
+            <h3>Texturas</h3>
+            <p class="descripcionProductos">
+                Se ofrecen 2 acabados diferentes.
+                <ul>
+                    <li>Pulido: Es el acabado tradicional. En la que se intensifican los colores y sus reflejos.</li>
+                    <li>Leather: Tratamiento en la superficie sin brillo y con suave relieve. </li>
+                </ul>
+            </p>
+            <h3>Cuidado y Mantenimiento</h3>
+            <p class="descripcionProductos">
+                <ul>
+                    <li>Para la limpieza tan solo agua es suficiente, pero cuando queremos limpiar y desinfectar debemos
+                        de emplear únicamente detergentes neutros, que su pH esté entre 7 y 10.</li>
+                    <li>No utilizar detergentes agresivos como lavandina, amoníacos, anti-cales, etc.</li>
+                    <li>No utilizar en la limpieza utensilios metálicos para evitar rayados en lugares no deseados.</li>
+                    <li>En caso de producirse manchas probaremos a limpiarlas localmente con agua jabonosa y si
+                        persistiera recuerde que existen en el mercado fabricantes con kits de producto para la
+                        eliminación de dichas manchas según su origen.</li>
+                </ul>
+            </p>
+            <h3></h3>
+            <p class="descripcionProductos"></p>
+            <h3></h3>
+            <p class="descripcionProductos"></p>
+            <h3></h3>
+            <p class="descripcionProductos"></p>
+            <h3></h3>
+            <p class="descripcionProductos"></p>
+        </section>
+        <hr>
+        <!--galeria de marmol-->
+        <h2 class="tituloGaleria">Galeria</h2>
+        <div class="contenedorGaleria">
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/marmol/antracite.jpg" alt="Antracite"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/marmol/arabescato.jpg" alt="Arabescato"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/marmol/arabescatocervaiole.jpg" alt="Arabescato cervaiole"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/marmol/beige.jpg" alt="Beige Español"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/marmol/goflansilver.jpg" alt="Goflan silver"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/marmol/marronbosque.jpg" alt="Marron bosque"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/marmol/negromarquina.jpg" alt="Negro marquina"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/marmol/verdebosque.jpg" alt="Verde bosque"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/marmol/verdeoriental.jpg" alt="Verde oriental"></div>
+        </div>
+        <section class="separadorFinal">
+        </section>
+    </main>
+    <!--pie legales, mapa e iconos de redes-->
+    <footer>
+        <h5><a href="../index.html">Home</a> | Legales | Mapa del sitio</h5>
+    </footer>
+    <!--fin pie legales, mapa e iconos de redes-->
+    <script src="js/bootstrap.js"></script>
+</body>
+
 </html>

@@ -1,48 +1,171 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Silver Stone</title>
-    <link rel="stylesheet" href="../css/estilo.css">    
+    <link rel="stylesheet" href="../css/bootstrap.css"> <!-- css boostrap-->
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
-<nav>
-    <div class="topNav"> <!--menu de navegacion superior-->
-        <a href="../nosotros.html">Nosotros</a>
-        <a href="../contacto.html">Contacto</a>
-        <a href="../presupuestos.html">Presupuestos</a>       
-        <div class="subNav">
-            <a class="active" href="../productos.html">Productos</button>
-            <div class="subNavContenido">
-                <a href="granito.html">Granito</a>
-                <a href="marmol.html">Marmol</a>
-                <a href="silestone.html">Silestone</a>
-                <a href="dekton.html">Dekton</a>
-            </div>
-        </div>        
-        <a href="../index.html">Inicio</a>
-    </div>
-</nav>
+
 <body>
-    <a href="../index.html"><img class="logo" src="../imagenes/logo.PNG" alt="Ocurrio un problema con el logo"></a>
-    <br>
-    <br>
-    <h1 class="tituloProductos titulo">Dekton</h1>
-    <br>
-    <p>Caracteristicas principales del producto</p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="galeriaVariantes">
-        <p>ESPACIO PARA GALERIA DE VARIANTES</p>
-    </div>
-<footer>
-    <h5><a href="../index.html">Home</a> | Legales | Mapa del sitio</h5>
-    <br>
-    <br>
-    <br>
-</footer>
+    <header>
+        <!--menu de navegacion superior-->
+        <nav class="navbar navbar-expand-lg bgnav navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../presupuestos.html">Presupuestos</a>
+                        </li>
+                        <li class="subMenu nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="productos.html">Productos</a>
+                            <ul class="dropdown-menu subMenuBorde bgnav" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="granito.html">Granito</a></li>
+                                <li><a class="dropdown-item" href="marmol.html">Marmol</a></li>
+                                <li><a class="dropdown-item" href="silestone.html">Silestone</a></li>
+                                <li><a class="dropdown-item" href="dekton.html">Dekton</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--espacio de logo-->
+        <section>
+            <a href="../index.html"><img class="logo" src="../imagenes/logo.png"
+                    alt="Ocurrio un problema con el logo"></a>
+        </section>
+        <!--fin espacio de logo-->
+        <h1 class="tituloProductos titulo">Dekton</h1>
+        <h2 class="textoCentrado">Caracteristicas</h2>
+        <hr>
+        <!--informacion general dekton-->
+        <section class="descripcion">
+            <h2>¿Que es Dekton?</h2>
+            <p class="descripcionProductos">Dekton, la nueva superficie ultracompacta de Cosentino, utiliza en su
+                fabricación la exclusiva tecnología “TSP”, un proceso tecnológico que supone una versión acelerada de
+                los cambios metamórficos que sufre la piedra natural al exponerse durante milenios a alta presión y alta
+                temperatura.
+                La tecnología TSP sintetiza, de una forma absolutamente innovadora, procedimientos de las industrias
+                tecnológicas más avanzadas. Una evolución que partiendo de aquellas, supone un salto tecnológico e
+                industrial capaz de generar un proceso nuevo, un material revolucionario y un producto líder. La
+                microscopía electrónica permite apreciar la nula porosidad del material, consecuencia del proceso de
+                sinterización y ultracompactación exclusiva de Dekton. Esa porosidad cero y la inexistencia de
+                microdefectos causantes de tensiones o puntos débiles, generan la característica diferencial de Dekton.
+            </p>
+            <h3>Color y textura</h3>
+            <p class="descripcionProductos">El color y la textura adquieren protagonismo gracias a Dekton, que es capaz
+                de mutar en cuerpos tan diversos como maderas salvajes y piedras naturales o acabados más propios de la
+                arquitectura moderna como son los óxidos o el microcemento.</p>
+            <h3>Ultrasize</h3>
+            <p class="descripcionProductos">Gracias al tamaño y la ligereza de Dekton (Tamaño hasta 320 x 144 cm) crecen
+                exponencialmente las posibilidades de diseño en cocinas, baños, fachadas, paredes o pavimentos de alto
+                tránsito.</p>
+            <h3>Propiedades</h3>
+            <p class="descripcionProductos">
+                <ul>
+                    <li>Alta resistencia a los rayos UV: Dekton es altamente resistente a los rayos ultravioleta (UV) y
+                        su color no degrada con el tiempo, lo que hace que sea un material perfecto tanto para
+                        interiores como para exteriores.</li>
+                    <li>Altamente resistente al rayado: Dekton es una superficie con alta resistencia al rayado. No se
+                        raya con los utensilios de uso doméstico. No obstante, recomendamos el uso de tablas de corte
+                        para asi proteger los utensilios domésticos.</li>
+                    <li>Resistencia a las manchas: Debido a su baja porosidad, la nueva superficie Dekton, es una
+                        superficie altamente resistente , tanto a las manchas ocasionales en el uso domestico como a los
+                        agentes químicos. Incluso las manchas más difíciles como las de vino, café, tinta y óxido se
+                        pueden limpiar fácilmente. Las salpicaduras o gotas de productos de limpieza cotidianos como
+                        lejía, limpia tuberías o desengrasantes para hornos no producen daño alguno al material.</li>
+                    <li>Alta resistencia al fuego y al calor: Dekton presenta una muy buena resistencia a las altas
+                        temperaturas sin que se vea afectada su estética ni su propiedades. Los utensilios calientes,
+                        electrodomésticos, ollas y sartenes, se pueden colocar directamente sobre la superficie sin
+                        peligro ni daño alguno.</li>
+                    <li>Resistencia a la abrasión: Dekton es incluso más resistente a la abrasión que el granito, lo
+                        cual lo convierte en la superficie ideal para aplicaciones comerciales y áreas de alto tránsito
+                        como solerías y fachadas. Mientras que otras superficies muestran desgaste con el paso del
+                        tiempo, el acabado de Dekton perdurará durante toda la vida del producto y no necesitará ser
+                        reemplazado o retocado en ningún momento.</li>
+                    <li>Resistencia al hielo y deshielo: El bajo coeficiente de expansión térmico de Dekton hace que sea
+                        resistente al choque térmico, del paso del calor al frío extremo. Su resistencia natural al
+                        hielo y al deshielo hacen que sea un material perfecto incluso en los entornos más fríos y
+                        extremos.</li>
+                    <li>Resistencia mecánica Con una resistencia a la flexión 3 veces mayor de la que ofrece el granito,
+                        Dekton puede instalarse en espesores mas finos, permitiendo un voladizo sin soporte de hasta
+                        30cm en encimeras, islas y barras de bar (dependiendo del espesor).</li>
+                    <li>Material no poroso: Dekton es un material no poroso y no necesita ser sellado en ningún momento.
+                        Por naturaleza, es capaz del repeler líquidos y gases para que no penetren en la superficie. De
+                        este modo, el mantenimiento de la superficie es mínimo y más fácil de limpiar.</li>
+                    <li>Estabilidad del color: El proceso de fabricación de Dekton nos permite controlar la pigmentación
+                        y la estética del material, dotándolo de una mejor consistencia del color en todas las tablas.
+                        El resultado es un producto que no decolora con el tiempo. Una vez instalada, la superficie
+                        mantendrá su aspecto durante toda la vida útil del producto.</li>
+                    <li>Estabilidad dimencional: Dekton es un material donde se controla de forma exhaustiva tanto la
+                        dimensión como el grosor en toda la tabla, lo cual reduce la necesidad de correcciones sobre la
+                        superficie y facilita asi su instalación.</li>
+                    <li>Alta resistencia a la hidrólisis: Dekton posee una alta resistencia ala hidrólisis.</li>
+                    <li>Material incombustible: Dekton es un material incombustible y presenta una muy buena resistencia
+                        a las altas temperaturas sin que se vea afectada su estética ni sus propiedades.</li>
+                </ul>
+            </p>
+            <h3>Espesores</h3>
+            <p class="descripcionProductos">Las tablas de Dekton se presentan en diferentes espesores entre los que
+                elegir la opción mas adecuada en función de la aplicación, el diseño o el efecto deseado, desde 0,8 cm
+                hasta 2 cm.</p>
+
+            <h3></h3>
+            <p class="descripcionProductos"></p>
+
+        </section>
+        <hr>
+        <!--galeria de dekton-->
+        <h2 class="tituloGaleria">Galeria</h2>
+        <div class="contenedorGaleria">
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/dekton/bergen.jpg" alt="Bergen"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/dekton/blaze.jpg" alt="Blaze"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/dekton/domoos.jpg" alt="Domoos"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/dekton/kairos.jpg" alt="Kairos"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/dekton/kelya.jpg" alt="Kelya"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/dekton/keranium.jpg" alt="Keranium"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/dekton/orix.jpg" alt="Orix"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/dekton/sirius.jpg" alt="Sirius"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/dekton/sirocco.jpg" alt="Sirocco"></div>
+        </div>
+        <section class="separadorFinal">
+        </section>
+    </main>
+    <!--pie legales, mapa e iconos de redes-->
+    <footer>
+        <h5><a href="../index.html">Home</a> | Legales | Mapa del sitio</h5>
+    </footer>
+    <!--fin pie legales, mapa e iconos de redes-->
+    <script src="js/bootstrap.js"></script>
+</body>
+
 </html>

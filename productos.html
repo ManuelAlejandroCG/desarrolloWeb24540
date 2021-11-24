@@ -1,117 +1,159 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Silver Stone</title>
-    <link rel="stylesheet" href="css/estilo.css">    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
-<nav>
-    <div class="topNav"> <!--menu de navegacion superior-->
-        <a href="nosotros.html">Nosotros</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="presupuestos.html">Presupuestos</a>       
-        <div class="subNav">
-            <a class="active" href="productos.html">Productos</button>
-            <div class="subNavContenido">
-                <a href="./productos/granito.html">Granito</a>
-                <a href="./productos/marmol.html">Marmol</a>
-                <a href="./productos/silestone.html">Silestone</a>
-                <a href="./productos/dekton.html">Dekton</a>
-            </div>
-        </div>        
-        <a href="index.html">Inicio</a>
-    </div>
-</nav>
+
 <body>
-    <a href="index.html"><img class="logo" src="imagenes/logo.PNG" alt="Ocurrio un problema con el logo"></a>
-    <br>
-    <br>    
-    <h1>Informacion de los productos</h1> 
-    <table> 
-        <tr>
-            <td class="titulosColumnas">Nombre</td>
-            <td class="titulosColumnas">Descripcion</td>
-            <td class="titulosColumnas">Caracteristicas principales</td>
-            <td class="titulosColumnas">Recomendaciones</td>
-        </tr>
-        <tr>
-            <td>Marmol</td>
-            <td>Roca natural metamórfica procedente de la transformación de rocas por un incremento de temperatura y presión</td>
-            <td>
-                <ul>
-                    <li>Material natural, cada diseño es único</li>
-                    <li>Poroso, susceptible a manchas</li>
-                    <li>Resistente al calor y los golpes</li>
-                </ul>
-            </td>
-            <td>
-                <ol>
-                    <li>No se recomienda para cocinas debido a su abrsorcion</li>
-                    <li>Baja resitencia a las rayas</li>
-                </ol>
-            </td>
-        </tr>
-        <tr>
-            <td>Granito</td>
-            <td>Roca natural ignea, formada mediante el enfriamiento de rocas y minerales fundidos, de gran dureza y resistencia al rayado</td>
-            <td>
-                <ul>
-                    <li>Material natural, cada diseño es único</li>
-                    <li>Muy resistente a golpes y el calor</li>
-                    <li>Resistente a rayaduras</li>
-                    <li>Facil de limpiar</li>
-                </ul>
-            </td>
-            <td>
-                <ol>
-                    <li>Algunos productos de limpieza agresivos pueden dañar la capa superficial del granito</li>
-                </ol>
-            </td>
-        </tr>
-        <tr>
-            <td>Silestone</td>
-            <td>Cuarzo natural creado para las decoración de cocinas y baños, cuenta con una superficie no porosa y altamente resistente a manchas</td>
-            <td>
-                <ul>
-                    <li>No poroso</li>
-                    <li>Gran resistencia y dureza</li>
-                    <li>Resitente a manchas y rayaduras</li>
-                    <li>Gran variedad de colores y acabados</li>
-                </ul>
-            </td>
-            <td>
-                <ol>
-                    <li>No se recomienda su uso en exteriores debido a su baja resitencia a los rayos UV</li>
-                </ol>
-            </td>
-        </tr>
-        <tr>
-            <td>Dekton</td>
-            <td>Sofisticada mezcla de materias primas utilizadas para la fabricacion de vidrio, porcelanato y superficies de cuarzo que culminan en un material de porosidad cero e inexistencia de microdefectos</td>
-            <td>
-                <ul>
-                    <li>No poroso</li>
-                    <li>Altamente resistente al rayado, rayos UV, manchas y agentes quimicos</li>
-                    <li>Muy buena resitencia al calor</li>
-                    <li>Resistencia a abrasiones</li>
-                    <li>Bajo coeficiente de expansión térmica</li>
-                    <li>Estabilidad de color</li>
-                </ul>
-            </td>
-            <td>
-                <ol>
-                    <li>Debido a su gran resistencia a los distintos factores es viable para cualquier superficie tanto en interiores como exteriores</li> 
-                </ol>
-            </td>
-        </tr>
-    </table>
-    <br>
-    <br>
-<footer>
-    <h5><a href="index.html">Home</a> | Legales | Mapa del sitio</h5>
-    <br>
-    <br>
-    <br>
-</footer>
+    <header>
+        <!--menu de navegacion superior-->
+        <nav class="navbar navbar-expand-lg bgnav navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="presupuestos.html">Presupuestos</a>
+                        </li>
+                        <li class="subMenu nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="productos.html">Productos</a>
+                            <ul class="dropdown-menu subMenuBorde bgnav" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./productos/granito.html">Granito</a></li>
+                                <li><a class="dropdown-item" href="./productos/marmol.html">Marmol</a></li>
+                                <li><a class="dropdown-item" href="./productos/silestone.html">Silestone</a></li>
+                                <li><a class="dropdown-item" href="./productos/dekton.html">Dekton</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--fin menu de navegacion superior-->
+    </header>
+    <main>
+        <!--espacio de logo-->
+        <section>
+            <a href="index.html"><img class="logo" src="imagenes/logo.png" alt="Ocurrio un problema con el logo"></a>
+        </section>
+        <!--fin espacio de logo-->
+        <h1 class="textoCentrado">Informacion de los productos</h1>
+        <!--tabla inforamacion de productos-->
+        <section class="contenedorTabla">
+            <table>
+                <tr>
+                    <td class="titulosColumnas">Nombre</td>
+                    <td class="titulosColumnas">Descripcion</td>
+                    <td class="titulosColumnas">Caracteristicas principales</td>
+                    <td class="titulosColumnas">Recomendaciones</td>
+                </tr>
+                <tr>
+                    <td>Marmol</td>
+                    <td>Roca natural metamórfica procedente de la transformación de rocas por un incremento de
+                        temperatura y presión</td>
+                    <td>
+                        <ul>
+                            <li>Material natural, cada diseño es único</li>
+                            <li>Poroso, susceptible a manchas</li>
+                            <li>Resistente al calor y los golpes</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ol>
+                            <li>No se recomienda para cocinas debido a su abrsorcion</li>
+                            <li>Baja resitencia a las rayas</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Granito</td>
+                    <td>Roca natural ignea, formada mediante el enfriamiento de rocas y minerales fundidos, de gran
+                        dureza y resistencia al rayado</td>
+                    <td>
+                        <ul>
+                            <li>Material natural, cada diseño es único</li>
+                            <li>Muy resistente a golpes y el calor</li>
+                            <li>Resistente a rayaduras</li>
+                            <li>Facil de limpiar</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ol>
+                            <li>Algunos productos de limpieza agresivos pueden dañar la capa superficial del granito
+                            </li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Silestone</td>
+                    <td>Cuarzo natural creado para las decoración de cocinas y baños, cuenta con una superficie no
+                        porosa y altamente resistente a manchas</td>
+                    <td>
+                        <ul>
+                            <li>No poroso</li>
+                            <li>Gran resistencia y dureza</li>
+                            <li>Resitente a manchas y rayaduras</li>
+                            <li>Gran variedad de colores y acabados</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ol>
+                            <li>No se recomienda su uso en exteriores debido a su baja resitencia a los rayos UV</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dekton</td>
+                    <td>Sofisticada mezcla de materias primas utilizadas para la fabricacion de vidrio, porcelanato y
+                        superficies de cuarzo que culminan en un material de porosidad cero e inexistencia de
+                        microdefectos</td>
+                    <td>
+                        <ul>
+                            <li>No poroso</li>
+                            <li>Altamente resistente al rayado, rayos UV, manchas y agentes quimicos</li>
+                            <li>Muy buena resitencia al calor</li>
+                            <li>Resistencia a abrasiones</li>
+                            <li>Bajo coeficiente de expansión térmica</li>
+                            <li>Estabilidad de color</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ol>
+                            <li>Debido a su gran resistencia a los distintos factores es viable para cualquier
+                                superficie tanto en interiores como exteriores</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <!--fin tabla inforamacion de productos-->
+        <section class="separadorFinal">
+        </section>
+    </main>
+    <!--pie legales, mapa e iconos de redes-->
+    <footer>
+        <h5><a href="index.html">Home</a> | Legales | Mapa del sitio</h5>
+    </footer>
+    <!--fin pie legales, mapa e iconos de redes-->
+    <script src="js/bootstrap.js"></script>
+</body>
+
 </html>

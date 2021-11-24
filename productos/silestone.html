@@ -1,48 +1,142 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Silver Stone</title>
-    <link rel="stylesheet" href="../css/estilo.css">    
+    <link rel="stylesheet" href="../css/bootstrap.css"> <!-- css boostrap-->
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
-<nav>
-    <div class="topNav"> <!--menu de navegacion superior-->
-        <a href="../nosotros.html">Nosotros</a>
-        <a href="../contacto.html">Contacto</a>
-        <a href="../presupuestos.html">Presupuestos</a>       
-        <div class="subNav">
-            <a class="active" href="../productos.html">Productos</button>
-            <div class="subNavContenido">
-                <a href="granito.html">Granito</a>
-                <a href="marmol.html">Marmol</a>
-                <a href="silestone.html">Silestone</a>
-                <a href="dekton.html">Dekton</a>
-            </div>
-        </div>        
-        <a href="../index.html">Inicio</a>
-    </div>
-</nav>
+
 <body>
-    <a href="../index.html"><img class="logo" src="../imagenes/logo.PNG" alt="Ocurrio un problema con el logo"></a>
-    <br>
-    <br>
-    <h1 class="tituloProductos titulo">Silestone</h1>     
-    <br>
-    <p>Caracteristicas principales del producto</p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="galeriaVariantes">
-        <p>ESPACIO PARA GALERIA DE VARIANTES</p>
-    </div>
-<footer>
-    <h5><a href="../index.html">Home</a> | Legales | Mapa del sitio</h5>
-    <br>
-    <br>
-    <br>
-</footer>
+    <header>
+        <nav class="navbar navbar-expand-lg bgnav navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../presupuestos.html">Presupuestos</a>
+                        </li>
+                        <li class="subMenu nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="productos.html">Productos</a>
+                            <ul class="dropdown-menu subMenuBorde bgnav" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="granito.html">Granito</a></li>
+                                <li><a class="dropdown-item" href="marmol.html">Marmol</a></li>
+                                <li><a class="dropdown-item" href="silestone.html">Silestone</a></li>
+                                <li><a class="dropdown-item" href="dekton.html">Dekton</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--espacio de logo-->
+        <section>
+            <a href="../index.html"><img class="logo" src="../imagenes/logo.png"
+                    alt="Ocurrio un problema con el logo"></a>
+        </section>
+        <!--fin espacio de logo-->
+        <h1 class="tituloProductos titulo">Silestone</h1>
+        <h2 class="textoCentrado">Caracteristicas</h2>
+        <hr>
+        <!--informacion general silestone-->
+        <section class="descripcion">
+            <h2>¿Qué es Silestone?</h2>
+            <h3>El cuarzo</h3>
+            <p class="descripcionProductos">Silestone está compuesto en un 94% de Cuarzo Natural triturado, resina de
+                poliéster, pigmentos y aditivos. Este aglomerado le proporciona una dureza y una resistencia
+                extraordinarias que, unido a la protección antibacterias, le dotan de unas cualidades de higiene
+                magníficas, bellos y variados colores, extraordinarias texturas, y unas altas prestaciones.</p>
+            <h3>Propiedades</h3>
+            <p class="descripcionProductos">
+                <ul>
+                    <li>Resistenta a las manchas: Silestone es una superficie no porosa y altamente resistente a las
+                        manchas de café, vino, limón, aceite de oliva, vinagre, maquillaje y muchos otros productos de
+                        uso diario. </li>
+                    <li>Resistente al rayado: El cuarzo es uno de los minerales más duros que existen. Esto hace que
+                        nuestros productos sean muy duraderos, con un alto nivel de resistencia a las agresiones
+                        externas.</li>
+                    <li>Resistente al impacto: La elevada resistencia al impacto de Silestone permite tener una
+                        tranquilidad en su cocina ante la manipulación de objetos de gran dureza. </li>
+                    <li>Calidad Garantizada: Cosentino ofrece a sus consumidores 25 años de garantía para las encimeras
+                        de cocina Silestone.</li>
+                    <li>Amplia gama de colores: Silestone en Argentina está disponible en 40 colores, asegurándose que
+                        haya un color que se adapta a la mayoría de estilos o texturas.</li>
+                </ul>
+            </p>
+            <h3>Espesores</h3>
+            <p class="descripcionProductos">Se ofrecen 2 espesores diferentes. En 12 y 20 mm.</p>
+            <h3>Formatos</h3>
+            <p class="descripcionProductos">TABLAS: actualmente se están comercializando 2 formatos, el Standar de 306 x
+                140 y el Jumbo de 325 x 159 cm.</p>
+            <h3>Texturas</h3>
+            <p class="descripcionProductos">
+                Se ofrecen 3 acabados diferentes.
+                <ul>
+                    <li>Pulido: Es acabado tradicional de Silestone es el pulido en la que se intensifican los colores y
+                        sus reflejos.</li>
+                    <li>Suede: El acabado Suede de Silestone ofrece una superficie que transmite una percepción
+                        sensorial única al tacto por su belleza y elegancia.</li>
+                    <li>Volcano: Una textura rústica pero suave a la vez.</li>
+                </ul>
+            </p>
+            <h3></h3>
+            <p class="descripcionProductos"></p>
+            <h3></h3>
+            <p class="descripcionProductos"></p>
+            <h3></h3>
+            <p class="descripcionProductos"></p>
+        </section>
+        <hr>
+        <!--galeria de silestone-->
+        <h2 class="tituloGaleria">Galeria</h2>
+        <div class="contenedorGaleria">
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/silestone/blancomaple.jpg" alt="Blanco maple"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/silestone/blancozeus.jpg" alt="Blanco zeuz"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/silestone/grisexpo.jpg" alt="Gris expo"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/silestone/ironicwhite.jpg" alt="Ironic white"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/silestone/negromarquina.jpg" alt="Negro marquina"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/silestone/negrotebas.jpg" alt="Negro tebas"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/silestone/rossomonza.jpg" alt="Rosso monza"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/silestone/stratuario.jpg" alt="Stratuario"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/silestone/unsui.jpg" alt="Unsui"></div>
+        </div>
+        <section class="separadorFinal">
+        </section>
+    </main>
+    <!--pie legales, mapa e iconos de redes-->
+    <footer>
+        <h5><a href="../index.html">Home</a> | Legales | Mapa del sitio</h5>
+    </footer>
+    <!--fin pie legales, mapa e iconos de redes-->
+    <script src="js/bootstrap.js"></script>
+</body>
+
 </html>

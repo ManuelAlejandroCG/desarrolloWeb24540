@@ -1,0 +1,25 @@
+[33mcommit cc160f2d463e26249118eeca054aa9d300b37408[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: ManuelAlejandroCG <manuelalejandro.cg@gmail.com>
+Date:   Tue Nov 23 22:55:50 2021 -0300
+
+    Revert "version 0.2"
+    
+    This reverts commit f3cd948551ea5219ffdcb098c39ea45fbd156c76.
+
+[33mcommit f3cd948551ea5219ffdcb098c39ea45fbd156c76[m[33m ([m[1;32mnueva_rama[m[33m)[m
+Author: ManuelAlejandroCG <manuelalejandro.cg@gmail.com>
+Date:   Tue Nov 23 22:46:25 2021 -0300
+
+    version 0.2
+
+[33mcommit 08248fe67d4f9b3ed3c2f6d5b3c3bfc9a4d408c1[m
+Author: ManuelAlejandroCG <manuelalejandro.cg@gmail.com>
+Date:   Tue Nov 23 21:47:30 2021 -0300
+
+    version 0.1
+
+[33mcommit 0b3413adc7453cbfae5918e1aa5e51fae44e365c[m
+Author: ManuelAlejandroCG <manuelalejandro.cg@gmail.com>
+Date:   Tue Nov 23 21:23:23 2021 -0300
+
+    primer commit

@@ -1,212 +1,334 @@
-/* Se incluyeron separadores en el index donde hay varias secciones 
-y se nombro acorde con camelCase todas las variables con nombre de mas de una palabra*/
+/* Generales */
 
-
-*{
-    margin:0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    margin: 0;
     padding: 0;
 }
-/* Font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-html{
+html {
     font-family: 'Roboto', sans-serif;
 }
 
-/* Barra de navegacion*/
-.topNav {
-    overflow: hidden;
-    background-color: #9ABEDB;
+/* Generales */
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
-.topNav a{
-    display: block;
-    float: right;            
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 22px;
+.textoCentrado,
+h1 {
+    text-align: center;
+}
+
+.margenChico {
+    margin-left: 10px;
+}
+
+.separadorFinal{
+    height: 40px;
+}
+
+/*Colores y fondos */
+body {
+    background-color: #EAE9F0;
+}
+.bold{
     font-weight: bold;
-    color: #FAD6D4;
 }
 
-.topNav a:hover, .sunNav:hover {
-background-color: #D9FFF4;
-color: black;
-}
-.topNav a.active {
-    background-color: #D9FFF4;    
-}
-/* sub menu de navegacion */
-.subNav{    
-    overflow: hidden;
-    background-color: #9ABEDB;
-    float: right;
-}
-.subNav{
-    text-decoration: none;
-    font-size: 20px;
-    color: #FAD6D4;
-    border: none;
-    outline: none;
-    color: #FAD6D4;    
-    background-color: inherit;
-    font-family: inherit;
-  }
-
-  .subNavContenido {
-    display: none;
-    position: absolute;
-    border: solid;
-    right: 0;
-    top: 54px;
-    right: 200px;
-    background-color: #9ABEDB;
-    width: 500px;
-    z-index: 1;
-  }
-  
-  .subNavContenido a {
-    float: right;
-    color: black;
-    text-decoration: none;
-  }
-  
-  .subNavContenido a:hover {
-    background-color: #D9FFF4;
-    color: black;
-  }
-  
-  .subNav:hover  .subNavContenido {
-    display: block;
-  }
-
-/*Colores y fondos generales*/
-body{
-background-color: #EAE9F0;
+footer {
+    background-color: #9ABEDB;  
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 25px;
+    width: 100%;
+    overflow: hidden; 
 }
 
-footer{
-background-color: #9ABEDB;
-}
-
-.titulo, .subtitulo, h2, h3{
+.titulo,
+.subtitulo,
+h1,
+h2,
+h3 {
     color: #297abd;
 }
 
+.sombra{
+    text-shadow: -1px 0px black, 1px 0px black, 0px -1px black, 0px 1px black;
+}
+
 /*Diseño del separador*/
-hr{
+hr {
+    margin-left: 0px;
     border: 2px solid #297abd;
     border-radius: 2px;
 }
+
+/* Barra de navegacion*/
+
+.bgnav {    
+    background-color: #9ABEDB; 
+    color: #FAD6D4;
+}
+
+.nav-link,
+.dropdown-item {
+    font-size: 22px;
+    font-weight: bold;
+    color: #FAD6D4 !important;
+}
+
+.nav-link:hover,
+.dropdown-item:hover{
+    background-color: silver;
+    color: black;
+}
+
+.nav-link.active, .topNav li a.active{
+    background-color: silver;
+}
+
+/* sub menu de navegacion */
+
+.subMenuBorde{
+    border: 2px solid #FAD6D4;
+}
+.subMenu:hover .dropdown-menu{
+    display: block;
+}
+
+
 /* logo */
-.logo
-{    
+.logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 75%;
     width: 10%;
+    margin-bottom: 20px;
+}
+
+/*Fin Generales*/
+
+/*Index*/
+.titulosContenedorVideos{
+    background-color: #E3DEE3;
+    border: 2px solid #297abd;
+    width: 80%;
+    padding: 10px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.contenedorVideos{
+    background-color: black;   
+    border: 2px solid #297abd;
+    width: 80%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*Videos del index*/
-.indexVid{
-    border:solid;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.indexVid {
+    margin: auto;
     height: 315px;
-    width: 560px;
-}
-/*Diseño de Imagenes y texto en Index*/
-.fila1{
-    position: relative;
     width: 100%;
-    height: 529px;
 }
-.fila2{
-    position: relative;
-    width: 100%;   
-    height: 705px;
-}
-.imagenesSubTexto{
-    float: left;    
-    width: 50%;
+
+/*Diseño de Imagenes y texto en Index*/
+.imagenesSubTexto {
+    float: left;
+    width: 100%;
     z-index: -1;
-}
-.textoGeneralImagenes{
-    position: absolute;
-    font-weight: bold;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-    z-index: 1;
-}
-.titulosHome{
-    top: 8px;
-    font-size: 40px;
-}
-.textosHome{
-    top: 70px;
-    font-size: 20px;
-    max-width: 45%;
-}
-.izquierdaHome{
-left: 5px;
-}
-.derechaHome{
-right: 5px;
 }
 
 /*Diseño del mapa*/
-.mapa{
-    border:solid;
-    width:100%;
+.mapa {
+    margin-left: 1%;
+    border: solid;
+    width: 98%;
     height: 450;
 }
 
-/*Diseño de tabla*/
-table, th, td {
-    border: 1px solid black;
-  }
+/*Media Queries index*/
+@media (min-width:481px) and (max-width: 768px) {
 
-table
-{
-    margin: 5px;
+    .indexVid {
+        width: 560px;
+    }
+
+}
+
+@media (min-width:769px) {
+
+    .indexVid {
+        width: 560px;
+    }
+
+    .imagenesSubTexto {
+        width: 50%;
+    }
+
+}
+
+/*Fin index*/
+
+/*Productos*/
+/*Diseño de tabla*/
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+.contenedorTabla {
+    display: flex;
+    justify-content: center;
+}
+
+table {
     background-color: #E3DEE3;
     text-align: center;
-    vertical-align: middle;    
+    vertical-align: middle;
     width: 65%;
 }
-.titulosColumnas{    
-    font-weight:bold;
+
+.titulosColumnas {
+    font-weight: bold;
     font-size: 19px;
     color: #297abd;
 }
-table tr td{    
+
+table tr td {
     padding: 20px;
 }
+
 /*Estilos de las listas dentro de la tabla*/
-table tr td ul{
+table tr td ul {
     list-style-position: inside;
     list-style-type: square;
     text-align: left;
 }
-table tr td ol{    
-    list-style-type: circle;  
+
+table tr td ol {
+    list-style-type: circle;
     text-align: left;
 }
-/*Diseño adicionales*/
-.cajaAdicionales{
-    border:solid;
-    width: 160px;
-}
+
 /*Estilos paginas productos individuales*/
-.tituloProductos{
+.tituloProductos {
     text-align: center;
     font-size: 400%;
     color: #297abd;
 }
-.galeriaVariantes{
-    border: solid;
-    background-color: #E3DEE3;
-    margin: 1%;
-    width: 98%;    
-    height: 300px;
+
+/*Diseño de imagenes de modelos*/
+.tituloGaleria {
+    text-align: center;
 }
+
+.contenedorGaleria {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: space-evenly;
+}
+
+.celdaGaleria {
+    width: calc(93%/3);
+    margin: 1%;
+}
+
+.responsiveImgGaleria {
+    max-width: 100%;
+    display: inline-block;
+}
+
+/*Transicion imagenes de galerias*/
+.transicionScaleOnClick {
+    transition: width 4s;
+}
+
+.transicionScaleOnClick:active {
+    width: 60%;
+    justify-content: center;
+}
+
+.whatsappbutton {
+    background-color: #7ACC72;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 5px;
+    margin-top: 10px;
+    width: fit-content;
+    cursor: pointer
+}
+.descripcion{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.descripcionProductos{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+/*Fin productos*/
+
+/*Nosotros*/
+
+.whatsappbutton a {
+    text-decoration: none;
+}
+
+/*Fin Nosotros*/
+
+/*Presupuestos*/
+
+/*Diseño adicionales*/
+.cajaAdicionales {
+    border: solid;
+    width: 160px;
+}
+
+/*Fin Presupuestos*/
+
+/*Diseño formularios*/
+
+form {
+    margin-left: auto;
+    margin-right:auto;
+    display: table;    
+    border: 5px solid #297abd;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+form p {
+    display: table-row;
+}
+
+form p label {
+    display: table-cell;
+}
+
+form p input {
+    display: table-cell;
+}
+
+form p select {
+    display: table-cell;
+}
+
+/*Fin Diseño formularios*/
