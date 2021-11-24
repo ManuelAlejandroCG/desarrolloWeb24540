@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Silver Stone</title>
+    <link rel="stylesheet" href="css/estilo.css">    
+</head>
+<nav>
+    <div class="topNav"> <!--menu de navegacion superior-->
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a class="active" href="presupuestos.html">Presupuestos</a>        
+        <div class="subNav">
+            <a href="productos.html">Productos</button>
+            <div class="subNavContenido">
+                <a href="./productos/granito.html">Granito</a>
+                <a href="./productos/marmol.html">Marmol</a>
+                <a href="./productos/silestone.html">Silestone</a>
+                <a href="./productos/dekton.html">Dekton</a>
+            </div>
+        </div>        
+        <a href="index.html">Inicio</a>
+    </div>
+</nav>
+<body>
+    <a href="index.html"><img class="logo" src="imagenes/logo.PNG" alt="Ocurrio un problema con el logo"></a>
+    <br>
+    <br>
+    <h1>Solicitud de presupuestos</h1>
+        <h4>Recuerde que este es un servicio de presupuesto aproximado los valores finales pueden variar</h4>
+        <form action="">
+            <label for="nombre">Nombre completo: </label>
+            <input type="text" name="nombre"><br>
+            <label for="correo">Correo: </label>
+            <input type="text" name="correo"><br>
+            <label for="telefono">Telefono: </label>
+            <input type="text" name="telefono"><br>
+            <label for="metrosCuadrados">Metros cuadrados: </label>
+            <input type="text" name="metrosCuadrados"><br>
+            <label for="encuentro">Material base</label>
+            <select name="materialBase" id="">
+                <option value="materialGranito">Granito</option>
+                <option value="materialMarmol">Marmol</option>
+                <option value="MaterialSilestone">Silestone</option>
+                <option value="MeterialDekton">Dekton</option>            
+            </select><br>
+            <h3>Incluir los adicionales correspondientes</h3>
+            <div class="cajaAdicionales">
+                <input type="checkbox" name="colocacion" value="1">
+                <label for="colocacion">Colocación</label><br>
+                <input type="checkbox" name="pileta" value="1">
+                <label for="pileta">Pileta</label><br>
+                <input type="checkbox" name="traforopileta" value="1">
+                <label for="traforopileta">Traforo para pileta</label><br>
+                <input type="checkbox" name="anafe" value="1">
+                <label for= "anafe">Agujero para Anafe</label><br>
+                <input type="checkbox" name="zocalos" value="1">
+                <label for= "zocalos">Zocalos</label><br>
+            </div>
+            <br>
+            <label for="comentarios">Comentarios adicionales:</label><br>
+            <textarea name="comentarios" cols="30" rows="10"></textarea><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar formulario">
+            <br>           
+            <p>Nuestros vendedores lo estaran contactando a la brevedad, muchas gracias.</p>
+            
+</body>
+<br />
+<br />
+<footer>
+    <h5><a href="index.html">Home</a> | Legales | Mapa del sitio</h5>
+    <br>
+    <br>
+    <br>
+</footer>
+</html>
