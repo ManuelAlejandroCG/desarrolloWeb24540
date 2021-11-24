@@ -1,48 +1,88 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Silver Stone</title>
-    <link rel="stylesheet" href="../css/estilo.css">    
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
-<nav>
-    <div class="topNav"> <!--menu de navegacion superior-->
-        <a href="../nosotros.html">Nosotros</a>
-        <a href="../contacto.html">Contacto</a>
-        <a href="../presupuestos.html">Presupuestos</a>       
-        <div class="subNav">
-            <a class="active" href="../productos.html">Productos</button>
-            <div class="subNavContenido">
-                <a href="granito.html">Granito</a>
-                <a href="marmol.html">Marmol</a>
-                <a href="silestone.html">Silestone</a>
-                <a href="dekton.html">Dekton</a>
-            </div>
-        </div>        
-        <a href="../index.html">Inicio</a>
-    </div>
-</nav>
+
 <body>
-    <a href="../index.html"><img class="logo" src="../imagenes/logo.PNG" alt="Ocurrio un problema con el logo"></a>
-    <br>
-    <br>
-    <h1 class="tituloProductos titulo">Granito</h1>     
-    <br>
-    <p>Caracteristicas principales del producto</p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="galeriaVariantes">
-        <p>ESPACIO PARA GALERIA DE VARIANTES</p>
-    </div>
-<footer>
-    <h5><a href="../index.html">Home</a> | Legales | Mapa del sitio</h5>
-    <br>
-    <br>
-    <br>
-</footer>
+    <header>
+        <nav>
+            <!--menu de navegacion superior-->
+            <ul class="topNav">
+                <li><a href="../nosotros.html">Nosotros</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+                <li><a href="../presupuestos.html">Presupuestos </a></li>
+                <li class="subNav">
+                    <a class="active" href="../productos.html">Productos</a>
+                    <div class="subNavContenido">
+                        <a href="granito.html">Granito</a>
+                        <a href="marmol.html">Marmol</a>
+                        <a href="silestone.html">Silestone</a>
+                        <a href="dekton.html">Dekton</a>
+                    </div>
+                </li>
+                <li><a href="../index.html">Inicio</a></li>
+            </ul>
+            <br>
+        </nav>
+    </header>
+    <main>
+        <!--espacio de logo-->
+        <section>
+            <a href="../index.html"><img class="logo" src="../imagenes/logo.PNG"
+                    alt="Ocurrio un problema con el logo"></a>
+            <br>
+            <br>
+        </section>
+        <!--fin espacio de logo-->
+        <h1 class="tituloProductos titulo">Granito</h1>
+        <br>
+        <!--informacion general granito-->
+        <p class="textoCentrado">Roca natural ignea, formada mediante el enfriamiento de rocas y minerales fundidos, de
+            gran
+            dureza y resistencia al rayado</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--galeria de granito-->
+        <h2 class="tituloGaleria">Galeria</h2>
+        <div class="contenedorGaleria">
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/granito/blancodallas.jpg" alt="Blanco dallas"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/granito/blancofortaleza.jpg" alt="Blanco fortaleza"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/granito/coffeebrown.jpg" alt="Coffee brown"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/granito/giallooro.jpg" alt="Giallo oro"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/granito/marronlabradorita.jpg" alt="Maroon labradorita"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/granito/negrobrasil.jpg" alt="Negro brasil"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/granito/rosasalto.jpg" alt="rosa salto"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/granito/sierrachica.jpg" alt="Sierra chica"></div>
+            <div class="celdaGaleria transicionScaleOnClick"><img class="responsiveImgGaleria"
+                    src="../imagenes/granito/vialactea.jpg" alt="Via lactea"></div>
+        </div>
+    </main>
+    <!--pie legales, mapa e iconos de redes-->
+    <footer>
+        <h5><a href="../index.html">Home</a> | Legales | Mapa del sitio</h5>
+        <br>
+        <br>
+        <br>
+    </footer>
+    <!--fin pie legales, mapa e iconos de redes-->
+</body>
+
 </html>
