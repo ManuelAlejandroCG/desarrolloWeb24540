@@ -1,6 +1,7 @@
 /* Generales */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -11,11 +12,13 @@ html {
 }
 
 /* Generales */
+
 body {
     width: 100%;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
 }
+
 .textoCentrado,
 h1 {
     text-align: center;
@@ -25,26 +28,28 @@ h1 {
     margin-left: 10px;
 }
 
-.separadorFinal{
+.separadorFinal {
     height: 40px;
 }
 
 /*Colores y fondos */
+
 body {
     background-color: #EAE9F0;
 }
-.bold{
+
+.bold {
     font-weight: bold;
 }
 
 footer {
-    background-color: #9ABEDB;  
+    background-color: #9ABEDB;
     position: fixed;
     left: 0;
     bottom: 0;
     height: 25px;
     width: 100%;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .titulo,
@@ -55,21 +60,33 @@ h3 {
     color: #297abd;
 }
 
-.sombra{
+h1 {
+    padding-top: 15px;
+}
+
+.sombra {
     text-shadow: -1px 0px black, 1px 0px black, 0px -1px black, 0px 1px black;
 }
 
 /*Diseño del separador*/
+
 hr {
     margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border: 2px solid #297abd;
     border-radius: 2px;
 }
 
+.problemSolver {
+    visibility: hidden;
+    margin: 0px;
+}
+
 /* Barra de navegacion*/
 
-.bgnav {    
-    background-color: #9ABEDB; 
+.bgnav {
+    background-color: #9ABEDB;
     color: #FAD6D4;
 }
 
@@ -81,55 +98,62 @@ hr {
 }
 
 .nav-link:hover,
-.dropdown-item:hover{
+.dropdown-item:hover {
     background-color: silver;
     color: black;
 }
 
-.nav-link.active, .topNav li a.active{
+.nav-link.active,
+.topNav li a.active {
     background-color: silver;
 }
 
 /* sub menu de navegacion */
 
-.subMenuBorde{
+.subMenuBorde {
     border: 2px solid #FAD6D4;
 }
-.subMenu:hover .dropdown-menu{
+
+.subMenu:hover .dropdown-menu {
     display: block;
 }
 
-
 /* logo */
+
 .logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 75%;
     width: 10%;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
 /*Footer*/
-.tamañoPie{
+
+.tamañoPie {
     font-size: 90%;
     padding-top: 5px;
 }
+
 /*Fin Generales*/
 
 /*Index*/
-.titulosContenedorVideos{
+
+.titulosContenedorVideos {
     background-color: #E3DEE3;
     border: 2px solid #297abd;
     width: 80%;
     padding: 10px;
-    height: 60px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
-.contenedorVideos{
-    background-color: black;   
+
+.contenedorVideos {
+    background-color: #E3DEE3;
     border: 2px solid #297abd;
     width: 80%;
     padding: 10px;
@@ -138,6 +162,7 @@ hr {
 }
 
 /*Videos del index*/
+
 .indexVid {
     margin: auto;
     height: 315px;
@@ -145,13 +170,14 @@ hr {
 }
 
 /*Diseño de Imagenes y texto en Index*/
-.imagenesSubTexto {
+
+.imagenesIndex {
     float: left;
     width: 100%;
-    z-index: -1;
 }
 
 /*Diseño del mapa*/
+
 .mapa {
     margin-left: 1%;
     border: solid;
@@ -160,30 +186,27 @@ hr {
 }
 
 /*Media Queries index*/
-@media (min-width:481px) and (max-width: 768px) {
-
+@media (min-width: 481px) and (max-width: 768px) {
     .indexVid {
         width: 560px;
     }
-
 }
 
-@media (min-width:769px) {
-
+@media (min-width: 769px) {
     .indexVid {
         width: 560px;
     }
 
-    .imagenesSubTexto {
+    .imagenesIndex {
         width: 50%;
     }
-
 }
 
 /*Fin index*/
 
 /*Productos*/
 /*Diseño de tabla*/
+
 table,
 th,
 td {
@@ -210,21 +233,23 @@ table {
 
 table tr td {
     padding: 20px;
+
+    ul {
+        list-style-position: inside;
+        list-style-type: square;
+        text-align: left;
+    }
+
+    ol {
+        list-style-type: circle;
+        text-align: left;
+    }
 }
 
 /*Estilos de las listas dentro de la tabla*/
-table tr td ul {
-    list-style-position: inside;
-    list-style-type: square;
-    text-align: left;
-}
-
-table tr td ol {
-    list-style-type: circle;
-    text-align: left;
-}
 
 /*Estilos paginas productos individuales*/
+
 .tituloProductos {
     text-align: center;
     font-size: 400%;
@@ -232,6 +257,7 @@ table tr td ol {
 }
 
 /*Diseño de imagenes de modelos*/
+
 .tituloGaleria {
     text-align: center;
 }
@@ -255,13 +281,14 @@ table tr td ol {
 }
 
 /*Transicion imagenes de galerias*/
+
 .transicionScaleOnClick {
     transition: width 4s;
-}
 
-.transicionScaleOnClick:active {
-    width: 60%;
-    justify-content: center;
+    &:active {
+        width: 60%;
+        justify-content: center;
+    }
 }
 
 .whatsappbutton {
@@ -276,15 +303,16 @@ table tr td ol {
     margin: 5px;
     margin-top: 10px;
     width: fit-content;
-    cursor: pointer
+    cursor: pointer;
 }
-.descripcion{
+
+.descripcion {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.descripcionProductos{
+.descripcionProductos {
     margin-top: 15px;
     margin-bottom: 25px;
 }
@@ -302,6 +330,7 @@ table tr td ol {
 /*Presupuestos*/
 
 /*Diseño adicionales*/
+
 .cajaAdicionales {
     border: solid;
     width: 160px;
@@ -313,27 +342,21 @@ table tr td ol {
 
 form {
     margin-left: auto;
-    margin-right:auto;
-    display: table;    
+    margin-right: auto;
+    display: table;
     border: 5px solid #297abd;
     padding: 10px;
     border-radius: 4px;
-}
 
-form p {
-    display: table-row;
-}
+    p {
+        display: table-row;
 
-form p label {
-    display: table-cell;
-}
-
-form p input {
-    display: table-cell;
-}
-
-form p select {
-    display: table-cell;
+        label,
+        input,
+        select {
+            display: table-cell;
+        }
+    }
 }
 
 /*Fin Diseño formularios*/
