@@ -89,9 +89,6 @@ hr {
 .subMenuBorde {
   border: 2px solid #FAD6D4; }
 
-.subMenu:hover .dropdown-menu {
-  display: block; }
-
 /* logo */
 .logo {
   display: block;
@@ -157,39 +154,6 @@ hr {
     width: 50%; } }
 
 /*Fin index*/
-/*Productos*/
-/*Diseño de tabla*/
-table,
-th,
-td {
-  border: 1px solid black; }
-
-.contenedorTabla {
-  display: flex;
-  justify-content: center; }
-
-table {
-  background-color: #E3DEE3;
-  text-align: center;
-  vertical-align: middle;
-  width: 65%; }
-
-.titulosColumnas {
-  font-weight: bold;
-  font-size: 19px;
-  color: #297abd; }
-
-table tr td {
-  padding: 20px; }
-  table tr td ul {
-    list-style-position: inside;
-    list-style-type: square;
-    text-align: left; }
-  table tr td ol {
-    list-style-type: circle;
-    text-align: left; }
-
-/*Estilos de las listas dentro de la tabla*/
 /*Estilos paginas productos individuales*/
 .tituloProductos {
   text-align: center;
@@ -273,4 +237,5 @@ form {
     form p select {
       display: table-cell; }
 
+/*Media Queries formularios*/
 /*Fin Diseño formularios*/
