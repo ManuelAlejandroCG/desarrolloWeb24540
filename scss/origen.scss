@@ -169,7 +169,7 @@ hr {
 
 .imagenesIndex {
     float: left;
-    width: 100%;    
+    width: 100%;
 }
 
 /*Diseño del mapa*/
@@ -267,6 +267,7 @@ hr {
 .descripcionProductos {
     margin-top: 15px;
     margin-bottom: 25px;
+    text-justify: inter-word;
 }
 
 /*Fin productos*/
@@ -298,30 +299,30 @@ form {
     display: table;
     border: 5px solid #297abd;
     padding: 10px;
-    border-radius: 4px;    
+    border-radius: 4px;
+
     p {
-        display:block;
+        display: block;
+
         label,
         input,
         select {
             display: table-cell;
         }
-    }    
+    }
 }
 
 
 
 /*Media Queries formularios*/
-@media (min-width: 481px) and (max-width: 768px) {
-
-}
+@media (min-width: 481px) and (max-width: 768px) {}
 
 @media (min-width: 769px) {
-form{
-    p{
-        display:table-row;
+    form {
+        p {
+            display: table-row;
+        }
     }
-}
 }
 
 /*Fin Diseño formularios*/
