@@ -231,11 +231,15 @@ form {
   padding: 10px;
   border-radius: 4px; }
   form p {
-    display: table-row; }
+    display: block; }
     form p label,
     form p input,
     form p select {
       display: table-cell; }
 
 /*Media Queries formularios*/
+@media (min-width: 769px) {
+  form p {
+    display: table-row; } }
+
 /*Fin Diseño formularios*/
